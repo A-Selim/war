@@ -9,8 +9,12 @@ p {
     margin: 0;
 }
 
+h1 {
+    font-size: 1.6rem;
+}
+
 h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .main {
@@ -18,8 +22,6 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    width: 60%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,13 +29,13 @@ h3 {
 }
 
 .top-container {
-    align-self: flex-start;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 #remaining-cards {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -65,7 +67,7 @@ h3 {
 }
 
 button#new-deck {
-    margin-right: 0.5em;
+    margin: 0 0 1em 0;
     padding: 0.7em 2em;
 }
 
@@ -76,4 +78,30 @@ button#draw {
 
 button:disabled {
     cursor: not-allowed;
+}
+
+@media(min-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .top-container {
+        align-self: flex-start;
+        flex-direction: row;
+    }
+
+    button#new-deck {
+        margin: 0 1em 0 0;
+    }
+
+    #remaining-cards {
+        font-size: 1.1rem;
+    }
+}
+
+@media(min-width: 900px) {
+    .main {
+        max-width: 900px;
+        margin: 0 auto;
+    }
 }
