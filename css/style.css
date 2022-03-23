@@ -41,8 +41,8 @@ h3 {
 
 /* Card holders */
 .card-holder {
-    width: calc(5 * 30px);
-    height: calc(7 * 30px);
+    width: calc(5 * 20px);
+    height: calc(7 * 20px);
     border: 1px solid black;
     border-radius: 5px;
 }
@@ -103,5 +103,10 @@ button:disabled {
     .main {
         max-width: 900px;
         margin: 0 auto;
+    }
+
+    .card-holder {
+        width: calc(5 * 30px);
+        height: calc(7 * 30px);
     }
 }
