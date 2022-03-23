@@ -34,7 +34,7 @@ function getNewDeck() {
             computerScore = 0;
             playerScore = 0;
             computerScoreText.textContent = `Computer Score: ${computerScore}`;
-            playerScoreText.textContent = `Player Score: ${playerScore}`;
+            playerScoreText.textContent = `Your Score: ${playerScore}`;
         });
 }
 
@@ -56,11 +56,11 @@ function drawTwoCards() {
             if (data.remaining === 0) {
                 drawBtn.disabled = true;
                 if (computerScore > playerScore) {
-                    headerText.textContent = "Sorry, You lost";
+                    headerText.textContent = "Sorry, You lost 😓";
                 } else if (computerScore < playerScore) {
-                    headerText.textContent = "You win the game";
+                    headerText.textContent = "🎉 You win the game 🎉";
                 } else {
-                    headerText.textContent = "It's a tie";
+                    headerText.textContent = "It's a tie 💪";
                 }
             }
         });
@@ -79,7 +79,7 @@ function defineWin(computerCard, playerCard) {
     } else if (indexOfComputerCard < indexOfPlayerCard) {
         headerText.textContent = "You Win";
         playerScore++;
-        playerScoreText.textContent = `Player Score: ${playerScore}`;
+        playerScoreText.textContent = `Your Score: ${playerScore}`;
     } else {
         headerText.textContent = "War";
     }
