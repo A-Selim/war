@@ -22,6 +22,8 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
     display: flex;
     flex-direction: column;
     align-items: center;
