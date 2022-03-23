@@ -10,6 +10,9 @@ let deckId;
 let computerScore = 0;
 let playerScore = 0;
 
+// Set height of main element to widow inner height for mobile view
+document.querySelector(".main").style.height = `${window.innerHeight}px`;
+
 newDeckBtn.addEventListener("click", getNewDeck);
 
 drawBtn.addEventListener("click", drawTwoCards);
